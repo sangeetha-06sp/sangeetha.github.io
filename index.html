@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Digital Profile</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f4f4f4;
+            transition: 0.3s;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .toggle-btn {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            padding: 8px 12px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px) scale(1.02);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Dark Mode */
+        .dark {
+            background: #121212;
+            color: white;
+        }
+
+        .dark .card {
+            background: #1e1e1e;
+        }
+
+        .dark header {
+            background: #000;
+        }
+
+        .dark h2 {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sangeetha Priya</h1>
+    <p>Aspiring Embedded Engineer</p>
+    <button class="toggle-btn" onclick="toggleMode()">🌙</button>
+</header>
+
+<div class="container">
+
+<div class="card">
+    <h2>Education</h2>
+    <p>Currently pursuing Electronics and Communication Engineering (ECE) with strong interest in embedded systems and modern technology development.</p>
+</div>
+
+<div class="card">
+    <h2>Technical Skills</h2>
+    <p><b>Embedded Systems:</b> Microcontrollers, Sensors, IoT Basics</p>
+    <p><b>Web Development:</b> HTML, CSS, JavaScript</p>
+    <p><b>Programming Languages:</b> C, Python</p>
+    <p><b>Tools & Platforms:</b> GitHub, VS Code</p>
+</div>
+
+<div class="card">
+    <h2>LinkedIn</h2>
+    <a href="https://leetcode.com/u/Sangeetha_sp/">Visit My Profile</a>
+</div>
+
+<div class="card">
+    <h2>Coding Practice</h2>
+    <p>Practicing problem solving on LeetCode.</p>
+    <p>PS Ranking (Skill Portal): Continuously improving problem-solving skills.</p>
+    <p> Completed First 3 level my of C</p>
+</div>
+
+<div class="card">
+    <h2>Achievements</h2>
+    <ul>
+        <li>Secured 1st Prize in Project Expo for an innovative dashboard system.</li>
+        <li>Participated in multiple project expos showcasing technical projects.</li>
+        <li>Actively engaged in technical learning and project development.</li>
+    </ul>
+</div>
+
+</div>
+
+<script>
+function toggleMode() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
+
