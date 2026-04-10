@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>My Digital Profile</title>
 
     <style>
         body {
-            font-family: "Segoe UI Emoji", "Noto Color Emoji", Arial, sans-serif;
+            font-family: Arial;
             margin: 0;
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
@@ -19,6 +18,7 @@
             position: sticky;
             top: 0;
             background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
         }
 
         nav a {
@@ -42,8 +42,8 @@
         }
 
         .profile-pic {
-            width: 130px;
-            height: 130px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             border: 3px solid white;
             object-fit: cover;
@@ -58,6 +58,7 @@
 
         .card {
             background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
             padding: 20px;
             border-radius: 15px;
             transition: 0.3s;
@@ -96,6 +97,7 @@
             margin: 5px 0;
         }
 
+        /* Dark Mode */
         .dark {
             background: #121212;
         }
@@ -110,12 +112,11 @@
 
 <header>
     <h1>👩‍💻 Sangeetha Priya</h1>
-    <p>⚙️ Aspiring Embedded Engineer</p>
+    <p>🚀 Aspiring Embedded Engineer</p>
 
     <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -123,11 +124,13 @@
 </header>
 
 <div class="hero">
+    <!-- 👉 Add your image file name below -->
     <img src="profile.jpg" alt="Profile" class="profile-pic">
 
-    <h2>✨ Welcome to My Portfolio</h2>
+    <h2>Welcome to My Digital Profile ✨</h2>
     <p>Focused on Embedded Systems, IoT and modern technology development</p>
 
+    <!-- 👉 Add your resume file name -->
     <a href="resume.pdf" download>📄 Download Resume</a>
 </div>
 
@@ -135,20 +138,12 @@
 
 <div class="card" id="about">
     <h2>👤 About Me</h2>
-    <p>
-        I am an enthusiastic Electronics and Communication Engineering student with a strong interest in embedded systems, IoT, and real-world application development. 
-        I am passionate about building practical solutions using microcontrollers and continuously improving my technical and problem-solving skills.
-    </p>
+    <p>An enthusiastic Electronics and Communication Engineering student with a strong interest in embedded systems and emerging technologies. Committed to continuous learning and practical implementation.</p>
 </div>
 
 <div class="card">
     <h2>🎓 Education</h2>
-    <p>
-        Currently pursuing a Bachelor of Engineering in Electronics and Communication Engineering (ECE), with a strong academic focus on embedded systems, microcontrollers, and communication technologies.
-    </p>
-    <p>
-        I have developed a solid foundation in both hardware and software integration, enabling me to design efficient and real-time embedded applications.
-    </p>
+    <p>Pursuing Bachelor's degree in Electronics and Communication Engineering (ECE), focusing on embedded systems and modern applications.</p>
 </div>
 
 <div class="card" id="skills">
@@ -167,30 +162,15 @@
     <div class="progress"><div class="bar" style="width:80%">80%</div></div>
 </div>
 
-<div class="card" id="projects">
-    <h2>🚀 Projects</h2>
-
-    <p><b>IoT-Based Real-Time Monitoring System</b></p>
-    <p>
-        Developed an IoT-based system using NodeMCU (ESP8266) to monitor real-time environmental data and display it through a web-based dashboard for analysis.
-    </p>
-
-    <ul>
-        <li>📡 ESP8266 microcontroller implementation</li>
-        <li>🌐 Real-time dashboard development</li>
-        <li>⚡ Continuous data monitoring</li>
-        <li>🧠 Technologies: Embedded C, IoT, HTML, JavaScript</li>
-    </ul>
-</div>
-
-<div class="card">
-    <h2>💻 GitHub</h2>
-    <a href="https://github.com/sangeetha-06sp" target="_blank">View Profile</a>
-</div>
-
 <div class="card">
     <h2>🔗 LinkedIn</h2>
-    <a href="https://www.linkedin.com/in/sangeetha-priya-987766385/" target="_blank">View Profile</a>
+    <a href="https://www.linkedin.com/in/sangeetha-priya-987766385/" target="_blank">Visit My Profile</a>
+</div>
+
+<div class="card">
+    <h2>💻 Coding Practice</h2>
+    <p>LeetCode problem solving</p>
+    <p>PS Ranking improving</p>
 </div>
 
 <div class="card">
@@ -198,7 +178,6 @@
     <ul>
         <li>🥇 1st Prize in Project Expo</li>
         <li>🎤 1st Prize in PPT Presentation</li>
-        <li>⌨️ First Class in English Typing (Senior Grade)</li>
         <li>📌 Participated in Project Expos</li>
     </ul>
 </div>
@@ -206,9 +185,11 @@
 <div class="card contact" id="contact">
     <h2>📞 Contact</h2>
 
-    <a href="mailto:sangeethas.ug.25.ec@francisxavier.ac.in">📧 Email</a>
-    <a href="https://github.com/sangeetha-06sp">💻 GitHub</a>
-    <a href="https://www.linkedin.com/in/sangeetha-priya-987766385/">🔗 LinkedIn</a>
+    <!-- 👉 Replace with your email -->
+    <a href="sangeethas.ug.25.ec@francisxavier.ac.in">📧 sangeethas.ug.25.ec@francisxavier.ac.in</a>
+
+    <!-- 👉 LinkedIn already added -->
+    <a href="https://www.linkedin.com/in/sangeetha-priya-987766385/">🔗 LinkedIn Profile</a>
 </div>
 
 </div>
