@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"> <!-- 🔥 IMPORTANT FIX -->
+    <meta charset="UTF-8">
     <title>My Portfolio</title>
 
     <style>
         body {
-            font-family: Arial;
+            font-family: "Segoe UI Emoji", "Noto Color Emoji", Arial, sans-serif;
             margin: 0;
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
@@ -19,7 +19,6 @@
             position: sticky;
             top: 0;
             background: rgba(0,0,0,0.7);
-            backdrop-filter: blur(10px);
         }
 
         nav a {
@@ -59,7 +58,6 @@
 
         .card {
             background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
             padding: 20px;
             border-radius: 15px;
             transition: 0.3s;
@@ -112,7 +110,7 @@
 
 <header>
     <h1>👩‍💻 Sangeetha Priya</h1>
-    <p>🚀 Aspiring Embedded Engineer</p>
+    <p>⚙️ Aspiring Embedded Engineer</p>
 
     <nav>
         <a href="#about">About</a>
@@ -127,7 +125,7 @@
 <div class="hero">
     <img src="profile.jpg" alt="Profile" class="profile-pic">
 
-    <h2>Welcome to My Portfolio ✨</h2>
+    <h2>✨ Welcome to My Portfolio</h2>
     <p>Focused on Embedded Systems, IoT and modern technology development</p>
 
     <a href="resume.pdf" download>📄 Download Resume</a>
@@ -146,10 +144,10 @@
 <div class="card">
     <h2>🎓 Education</h2>
     <p>
-        Currently pursuing a Bachelor of Engineering in Electronics and Communication Engineering (ECE), with a strong academic focus on embedded systems, microcontrollers, and modern communication technologies.
+        Currently pursuing a Bachelor of Engineering in Electronics and Communication Engineering (ECE), with a strong academic focus on embedded systems, microcontrollers, and communication technologies.
     </p>
     <p>
-        Developed strong knowledge in hardware-software integration and real-time system design through academic and project-based learning.
+        I have developed a solid foundation in both hardware and software integration, enabling me to design efficient and real-time embedded applications.
     </p>
 </div>
 
@@ -174,243 +172,15 @@
 
     <p><b>IoT-Based Real-Time Monitoring System</b></p>
     <p>
-        Developed an IoT-based system using NodeMCU (ESP8266) to monitor real-time environmental data and display it through a web dashboard.
+        Developed an IoT-based system using NodeMCU (ESP8266) to monitor real-time environmental data and display it through a web-based dashboard for analysis.
     </p>
 
     <ul>
-        <li>📡 ESP8266-based implementation</li>
-        <li>🌐 Real-time web dashboard</li>
-        <li>⚡ Continuous monitoring system</li>
-        <li>🛠️ Technologies: Embedded C, IoT, HTML, JavaScript</li>
+        <li>📡 ESP8266 microcontroller implementation</li>
+        <li>🌐 Real-time dashboard development</li>
+        <li>⚡ Continuous data monitoring</li>
+        <li>🧠 Technologies: Embedded C, IoT, HTML, JavaScript</li>
     </ul>
-
-    <a href="https://github.com/sangeetha-06sp/project1" target="_blank">View on GitHub</a>
-</div>
-
-<div class="card">
-    <h2>💻 GitHub</h2>
-    <a href="https://github.com/sangeetha-06sp" target="_blank">View Profile</a>
-</div>
-
-<div class="card">
-    <h2>🔗 LinkedIn</h2>
-    <a href="https://www.linkedin.com/in/sangeetha-priya-987766385/" target="_blank">View Profile</a>
-</div>
-
-<div class="card">
-    <h2>🏆 Achievements</h2>
-    <ul>
-        <li>🥇 1st Prize in Project Expo</li>
-        <li>🎤 1st Prize in PPT Presentation</li>
-        <li>⌨️ First Class in English Typing (Senior Grade)</li>
-        <li>📌 Participated in Project Expos</li>
-    </ul>
-</div>
-
-<div class="card contact" id="contact">
-    <h2>📞 Contact</h2>
-
-    <a href="mailto:sangeethas.ug.25.ec@francisxavier.ac.in">📧 Email</a>
-    <a href="https://github.com/sangeetha-06sp">💻 GitHub</a>
-    <a href="https://www.linkedin.com/in/sangeetha-priya-987766385/">🔗 LinkedIn</a>
-</div>
-
-</div>
-
-<script>
-function toggleMode() {
-    document.body.classList.toggle("dark");
-}
-</script>
-
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8"> <!-- 🔥 IMPORTANT FIX -->
-    <title>My Portfolio</title>
-
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            scroll-behavior: smooth;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-            position: sticky;
-            top: 0;
-            background: rgba(0,0,0,0.7);
-            backdrop-filter: blur(10px);
-        }
-
-        nav a {
-            margin: 10px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .toggle-btn {
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            padding: 6px 10px;
-            cursor: pointer;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 40px;
-        }
-
-        .profile-pic {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            border: 3px solid white;
-            object-fit: cover;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .card {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            padding: 20px;
-            border-radius: 15px;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        h2 {
-            color: #fff;
-        }
-
-        .progress {
-            background: rgba(255,255,255,0.2);
-            border-radius: 10px;
-        }
-
-        .bar {
-            height: 20px;
-            background: #00ffcc;
-            text-align: center;
-            border-radius: 10px;
-        }
-
-        a {
-            color: #00ffcc;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        .contact a {
-            display: block;
-            margin: 5px 0;
-        }
-
-        .dark {
-            background: #121212;
-        }
-
-        .dark header {
-            background: black;
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
-    <h1>👩‍💻 Sangeetha Priya</h1>
-    <p>🚀 Aspiring Embedded Engineer</p>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <button class="toggle-btn" onclick="toggleMode()">🌙</button>
-</header>
-
-<div class="hero">
-    <img src="profile.jpg" alt="Profile" class="profile-pic">
-
-    <h2>Welcome to My Portfolio ✨</h2>
-    <p>Focused on Embedded Systems, IoT and modern technology development</p>
-
-    <a href="resume.pdf" download>📄 Download Resume</a>
-</div>
-
-<div class="container">
-
-<div class="card" id="about">
-    <h2>👤 About Me</h2>
-    <p>
-        I am an enthusiastic Electronics and Communication Engineering student with a strong interest in embedded systems, IoT, and real-world application development. 
-        I am passionate about building practical solutions using microcontrollers and continuously improving my technical and problem-solving skills.
-    </p>
-</div>
-
-<div class="card">
-    <h2>🎓 Education</h2>
-    <p>
-        Currently pursuing a Bachelor of Engineering in Electronics and Communication Engineering (ECE), with a strong academic focus on embedded systems, microcontrollers, and modern communication technologies.
-    </p>
-    <p>
-        Developed strong knowledge in hardware-software integration and real-time system design through academic and project-based learning.
-    </p>
-</div>
-
-<div class="card" id="skills">
-    <h2>🛠️ Technical Skills</h2>
-
-    <p>Embedded Systems</p>
-    <div class="progress"><div class="bar" style="width:85%">85%</div></div>
-
-    <p>HTML</p>
-    <div class="progress"><div class="bar" style="width:75%">75%</div></div>
-
-    <p>JavaScript</p>
-    <div class="progress"><div class="bar" style="width:70%">70%</div></div>
-
-    <p>C Programming</p>
-    <div class="progress"><div class="bar" style="width:80%">80%</div></div>
-</div>
-
-<div class="card" id="projects">
-    <h2>🚀 Projects</h2>
-
-    <p><b>IoT-Based Real-Time Monitoring System</b></p>
-    <p>
-        Developed an IoT-based system using NodeMCU (ESP8266) to monitor real-time environmental data and display it through a web dashboard.
-    </p>
-
-    <ul>
-        <li>📡 ESP8266-based implementation</li>
-        <li>🌐 Real-time web dashboard</li>
-        <li>⚡ Continuous monitoring system</li>
-        <li>🛠️ Technologies: Embedded C, IoT, HTML, JavaScript</li>
-    </ul>
-
-    <a href="https://github.com/sangeetha-06sp/project1" target="_blank">View on GitHub</a>
 </div>
 
 <div class="card">
